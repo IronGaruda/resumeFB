@@ -1,0 +1,85 @@
+.skills {
+  display: flex;
+  width: 100%;
+  background-color: #4a1d9e;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: -5vw;
+  padding-bottom: 12vw;
+
+
+  .skills-container {
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .left {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-around;
+      box-sizing: border-box;
+      width: 75%;
+      z-index: 99;
+    }
+
+    .right {
+      width: 25%;
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      padding: 0;
+      flex-direction: column;
+
+      .left {
+        flex-direction: column;
+
+        app-project-container {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .left, .right {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 2rem;
+  }
+}
+
+.card-subtitle-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card-subtitle {
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-class {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  color: #ffffff;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}

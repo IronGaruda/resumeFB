@@ -1,0 +1,185 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+:root {
+  --light-theme-bgMain: rgb(74, 29, 158);
+  --light-theme-bgMinor: #ffffff;
+  --light-theme-text: #000000;
+  --light-theme-w-accent: #00000016;
+  --light-theme-p-accent: rgb(74, 29, 158, 16); 
+
+  --dark-theme-bgMain: #1f1b24;
+  --dark-theme-bgMinor: #121212;
+  --dark-theme-text: #ffffff;
+  --dark-theme-g-accent: #12121216; 
+  --dark-theme-p-accent: #1f1b2416;
+  --dark-theme-t-accent: #cdaddd;
+
+  --overlay: #ffffff15;
+
+  .skew {
+    transform: skewY(3deg);
+  }
+  .unskew {
+    transform: skewY(-3deg);
+  }
+}
+
+.dark-mode {
+  background-color: var(--dark-theme-bgMinor);
+
+    .app-container {
+
+      app-navbar {
+
+        .nav-container {
+
+          background-color: var(--dark-theme-bgMinor);
+
+            .nav-menu {
+
+              a {
+                color: var(--dark-theme-t-accent);
+              }
+            }
+        }
+      }
+
+      app-introbox {
+
+        background-color: var(--dark-theme-bgMain);
+        
+          h1 {
+            color: var(--dark-theme-t-accent);
+          }
+
+          h2 {
+            color: var(--dark-theme-text);
+          }
+
+          p {
+            color: var(--dark-theme-text);
+          }
+
+          button {
+            color: var(--dark-theme-t-accent);
+          } 
+
+          .close-btn-box {
+            background-color: none;
+          }
+      }
+
+      app-skillbox {
+      
+        .skills{
+          background-color: var(--dark-theme-bgMain);
+
+            h2 {
+              color: var(--dark-theme-t-accent);
+            }
+        }
+      }
+      
+      app-exproject {
+        
+        .project-container {
+
+          .project-button {
+            background-color: var(--overlay);
+          }
+      
+          h2 {
+          color: var(--dark-theme-text);
+          }
+        }
+       }
+
+        app-project-container{
+
+          .project-main {
+            color: var(--dark-theme-text);
+            background-color: var(--dark-theme-bgMinor);
+
+            .project-active {
+              background-color: var(--dark-theme-bgMain);
+              color: var(--dark-theme-t-accent);
+            }
+          }
+        }
+
+        app-contact {
+          h2{
+            color: var(--dark-theme-t-accent);
+          }
+
+          a {
+            color: var(--dark-theme-t-accent);
+          }
+
+          #contact {
+
+            background-color: var(--dark-theme-bgMain);
+          }
+        }
+      }
+  } 
+
+
+  html {
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+h3, h4 {
+  font-weight: 900;
+  text-transform: capitalize;
+  font-family: 'Raleway', serif;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-family: 'Raleway', serif;
+}
+
+li {
+  font-family: 'Raleway', serif;
+}
+
+.padded-container {
+  /*clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 6vw)
+  );
+  padding: 4rem;
+  z-index: 99;*/
+}
+
+.section-title {
+  font-size: 4rem;
+}

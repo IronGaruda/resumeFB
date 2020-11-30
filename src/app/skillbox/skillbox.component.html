@@ -1,0 +1,41 @@
+<div class="skills padded-container skew" id="skills">
+  <h2 class="section-title unskew">Skills</h2>
+  <div class="skills-container unskew">
+    <div class="left">
+      <app-project-container defaultTitle="HTML & CSS">
+        <default-content>
+          <ul>
+            <li>Accessible HTML</li>
+            <li>Responsive Mobile Design</li>
+            <li>Cross-Browser Compatible</li>
+            <li></li>
+          </ul>
+        </default-content>
+        <active-content>
+          <div class="theme-container">
+            <h3 class="title-class">Theme Switcher</h3>
+            <app-theme-button class="theme-button"></app-theme-button>
+          </div>
+        </active-content>
+      </app-project-container>
+
+      <app-project-container defaultTitle="JavaScript">
+        <default-content>
+          <ul>
+            <li>Angular Framework</li>
+            <li>Experience With RESTful APIs</li>
+            <li>Reactive Development Principles</li>
+            <li></li>
+          </ul>
+        </default-content>
+        <active-content>
+          <app-api-call (valueChange)='displayTitle($event)'></app-api-call> <!--API CALL WIDGET COMPONENT-->
+        </active-content>
+      </app-project-container>
+    </div>
+    <div class="right">
+      <app-animation-helper></app-animation-helper>
+    </div>
+  </div>
+
+</div>

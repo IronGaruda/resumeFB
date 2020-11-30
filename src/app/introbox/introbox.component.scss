@@ -1,0 +1,152 @@
+.introbox-container {
+  display: flex;
+  padding: 13rem 0 8rem 4rem;
+  flex-direction: row;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 6vw)
+  );
+  z-index: 9;
+  position: relative;
+
+  @media (max-width: 600px) {
+    padding: 2rem;
+
+    .photo-area {
+      display: none;
+    }
+  }
+}
+
+.introbox-area {
+    width: 100%;
+}
+
+
+
+.play-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 4rem;
+  transition: all ease-in-out 350ms;
+
+  .intro {
+    font-size: 0.75rem;
+    font-weight: 900;
+    margin-left: 1rem;
+    text-transform: capitalize;
+    font-family: 'Raleway', serif;
+  }
+
+  .btn-box {
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+    font-size: 5rem;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro, .btn-box {
+    transition: all ease-in-out 350ms;
+
+    &:hover {
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+  }
+}
+
+.close-btn-box {
+  transition: all ease-in-out 350ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  outline: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: -0.65rem;
+  margin-top: -1.55rem;
+  padding: 0.25rem;
+  background-color: var(--light-theme-bgMain);
+  color: #ffffff;
+  position: relative;
+  border-radius: 5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+
+  &:hover {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+}
+
+.video-player {
+  box-shadow:  0 0 20px #00000045;
+  border-radius: 2rem;
+}
+
+.move-box {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: -93%;
+    margin-bottom: 15rem;
+    flex-direction: row;
+    transition: all ease-in-out 0.5s;
+}
+
+.box-finished {
+    margin-left: 0;
+}
+
+.hide-play {
+    visibility: hidden;
+}
+
+.show-exit {
+    visibility: visible;
+}
+
+.fa-times-circle {
+   cursor: pointer;
+}
+
+.namebox-area {
+    margin: .25rem 0;
+    color: rgb(74, 29, 158);
+    text-align: left;
+    font-weight: 900;
+    font-size: 4rem;
+    letter-spacing: .25rem;
+}
+
+.job-title {
+    margin: auto;
+    text-align: left;
+    font-size: 3rem;
+}
+
+.job-desc {
+    margin: auto;
+    text-align: left;
+    letter-spacing: .2rem;
+}
+
+.fa-play-circle {
+    text-align: left;
+    margin: auto;
+    visibility: visible;
+}
+
+.photo-area {
+    height: 40rem;
+    width: 20rem;
+    background-image: url(src\assets\img\skooll.png);
+    background-size: cover;
+}

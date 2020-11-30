@@ -1,0 +1,29 @@
+<div class="project-main">
+  <div class="project-default">
+    <div class="project-header">
+      <h3 class="header-title">{{defaultTitle}}</h3>
+      <div class="header-cta" (click)="showProject = !showProject">
+        <i class="fas fa-eye" *ngIf="projectType === 'default'"></i>
+        <i class="far fa-times-circle" *ngIf="projectType === 'active'"></i>
+      </div>
+    </div>
+    <ng-content select="default-content"></ng-content>
+  </div>
+
+  <!-- ACTIVE STATE -->
+  <div class="project-active" [ngClass]="{'show-project': showProject}" >
+    <div class="project-header">
+      <h3 class="header-title">{{activeTitle}}</h3>
+      <div class="header-cta" (click)="showProject = !showProject">
+        <i class="far fa-times-circle" *ngIf="projectType === 'default'"></i>
+        <i class="fas fa-info-circle" *ngIf="projectType === 'active'"></i>
+      </div>
+    </div>
+    <div class="header-block-container">
+      <div class="header-block-max">
+        <ng-content class="header-block-max"  select="header-block"></ng-content>
+      </div>
+    </div>
+    <ng-content select="active-content"></ng-content>
+  </div>
+</div>

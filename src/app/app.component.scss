@@ -1,0 +1,33 @@
+.header-area .logo img {
+    width: 100%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a, button {
+    color: #1F1F1F;
+    outline: medium none;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: normal;
+}

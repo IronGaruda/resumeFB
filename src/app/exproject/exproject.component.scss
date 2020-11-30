@@ -1,0 +1,53 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    padding-bottom: 10rem;
+    position: relative;
+    z-index: 9;
+
+    .all-projects {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10rem;
+
+      @media (max-width: 640px) {
+        flex-direction: column;
+
+        app-project-container {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    @media (max-width: 640px) {
+      padding: 2rem;
+    }
+
+    .section-title {
+      color: var(--light-theme-bgMain);
+      margin-top: 4rem;
+      margin-bottom: 8rem;
+    }
+
+    .align {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .project-button {
+      background-image: none;
+      background-color: var(--overlay);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -1rem;
+    }
+
+    .button-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}

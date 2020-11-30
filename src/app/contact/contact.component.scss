@@ -1,0 +1,72 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #4a1d9e;
+    color: #ffffff;
+    margin-top: -6vw;
+    padding-left: 4rem;
+    padding-right: 0;
+    padding-bottom: 14vw;
+
+    .contact-content {
+      display: flex;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      padding: 2rem;
+      align-items: center;
+    }
+}
+.left , .right {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+
+    .c-wrapper {
+      margin: 0;
+      margin-bottom: 2rem;
+      align-items: center;
+    }
+  }
+}
+
+.right {
+  width: 45%;
+  justify-content: flex-end;
+}
+
+.c-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 1.25rem;
+    margin-right: 5rem;
+
+    .fa-paper-plane, .fa-mobile {
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+      font-size: 4rem;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', serif;
+    margin-top: 2rem;
+}
+
+// **CSS EFFECTS**
+
+

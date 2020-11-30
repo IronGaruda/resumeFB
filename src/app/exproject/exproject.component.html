@@ -1,0 +1,22 @@
+<div class="project-container padded-container" id="projects">
+  <h2 class="section-title">Recent Projects</h2>
+  <div class="all-projects">
+    <app-project-container *ngFor="let project of projects" [defaultTitle]="project.title" projectType="active">
+      <header-block>
+        <img [src]="project.imageURL" width="100%" />
+      </header-block>
+      <default-content>
+        <p>Test content</p>
+      </default-content>
+      <active-content>
+        <div [innerHTML]="project.markup"></div>
+        <div class="align">
+          <a class="button-link" [routerLink]="['/' + project.destination]" target="_blank" (click)="openProject()">
+            <input type="button" class="project-button">
+          </a>
+        </div>
+      </active-content>
+    </app-project-container>
+  </div>
+</div>
+ 

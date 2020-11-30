@@ -1,0 +1,31 @@
+<div class="introbox-container" id="home">
+  <div class="introbox-area">
+    <div class="name-box">
+        <h1 class="namebox-area">Anthony Martire</h1>
+    </div>
+    <div class="job-title">
+        <h2 class="job-title">Front-End Developer</h2>
+    </div>
+    <div class="job-desc">
+        <p class="job-desc">Angular, JavaScript, HTML, CSS</p>
+    </div>
+    <div class="play-box" (click)="toggleVideo()" *ngIf="hidePlay">
+        <button class="btn-box">
+            <i class="far fa-play-circle" *ngIf="hidePlay"></i>
+        </button>
+        <div class="intro"><p>Personalized Introduction Video</p></div>
+    </div>
+    <div class="move-box" [class.box-finished]="showVideo">
+        <div class="video-box" *ngIf="showExit">
+            <iframe class="video-player" width="560" height="315" [src]="safeUrl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div (click)="toggleVideo(true)" *ngIf="showExit">
+            <button class="close-btn-box">
+                <i class="far fa-times-circle"></i>
+            </button>
+        </div>
+    </div>
+  </div>
+  <div class="photo-area">
+  </div>
+</div>

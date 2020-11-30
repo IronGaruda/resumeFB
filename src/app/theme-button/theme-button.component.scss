@@ -1,0 +1,38 @@
+
+
+input {
+    -webkit-appearance: none;
+    outline: none;
+    position: relative;
+    background-image: url(src\assets\img\light.png);
+    background-size: cover;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 3.125rem;
+    box-shadow: 0px 2px 10px 1px #00000050;
+    transition: background-image .90s;
+}
+
+input:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.1rem;
+    height: 4rem;
+    background-color: rgb(177, 248, 239);
+    border-radius: 3.125rem;
+    transition: all .9s;
+  }
+
+  input:checked {
+    background-image: url(https://media.istockphoto.com/vectors/forest-landscape-illustration-vector-id907887884?k=6&m=907887884&s=612x612&w=0&h=bL2nzIlQdQFokgYB3Rn72GtRPUgHzL2Uk4jdcnVkhqo%3D&fbclid=IwAR2bBOJVax2p8GSlBg_6A8mQ3j7HC8G387cPjXNoceseUM8z7ezPCRMyOaU);
+    transition: background-image .90s;
+    transition: all .9s;
+  
+  }
+
+  input:checked:before {
+      background-color: black;
+      transform: translate(100%)
+  }

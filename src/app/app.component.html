@@ -1,0 +1,5 @@
+<div class="app-container">
+  <app-navbar class="nav-bar" [reveal]="showNav"></app-navbar> <!--ADD FADE IN ANIMATION TO NAVIGATION BAR-->
+  <router-outlet></router-outlet>
+</div>
+<div *ngIf="scroll$|async"></div>

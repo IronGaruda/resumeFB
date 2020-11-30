@@ -1,0 +1,77 @@
+.nav-container {
+  transition: all ease-in-out 350ms;
+  display: flex;
+  width: 100vw;
+  margin-top: -5rem;
+  height: 4rem;
+  background-color: var(--light-theme-bgMinor);
+  font-family: 'Raleway', serif !important;
+  position: fixed;
+  z-index: 99;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-sizing: border-box;
+
+  .logo {
+    height: 3rem;
+    margin-right: 1rem;
+  }
+}
+
+.fa-user { //user/home icon
+  transform: scale(3,3);
+  margin: 30% 25px;
+}
+
+.nav-namejob { //name and job-title
+ font-size: 11px;
+ width: 25%;
+}
+
+.nav-menu { //holds menu <a> contents
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-around;
+
+  a {
+    transform: scale(1,1);
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--light-theme-bgMain);
+    font-weight: normal;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+
+    a {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.fa-bars { //menu button
+  margin: 34px 25px;
+  transform: scale(3,2.5);
+  justify-content: center;
+}
+
+h1 {
+  color: rgb(74, 29, 158);
+  margin: 10px 0 0 0;
+}
+
+p {
+  margin: 0;
+}
+
+.nav-bar-animation {
+  margin-top: 0;
+  box-shadow:  0 0 20px #00000035;
+}

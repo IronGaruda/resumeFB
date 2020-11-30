@@ -1,0 +1,44 @@
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.card-subtitle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-subtitle {
+    font-family: 'Raleway', serif; 
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-button {
+    background: url('src/assets/img/metro.png');
+    height: 5rem;
+    width: 5rem;
+    background-size: contain;
+    border: none;
+    outline: none;
+    margin-top: 2rem;
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.time-display {
+    text-align: center;
+    font-family: 'Raleway', serif;
+    font-size: 1rem;
+}

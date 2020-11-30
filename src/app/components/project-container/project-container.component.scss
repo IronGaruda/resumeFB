@@ -1,0 +1,78 @@
+.project-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 20rem;
+  min-width: 20rem;
+  background-color: #ffffff;
+  box-shadow:  0 0 20px #00000035;
+  flex: auto;
+  position: relative;
+  box-sizing: border-box;
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000008;
+    padding: 1rem;
+
+    .header-title {
+      font-size: 1.25rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .project-default {
+    flex-direction: column;
+    transition: all ease-in-out 350ms;
+    display: flex;
+  }
+
+  .project-active {
+    flex-direction: column;
+    transition: all ease-in-out 350ms;
+    padding: 0;
+    position: absolute;
+    color: #ffffff;
+    height: 0;
+    width: 0;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--light-theme-bgMain);
+
+    &:hover {
+
+      .header-block-container > .header-block-max {
+        transform: scale(1.2);
+      }
+    }
+
+    .header-block-container {
+      width: 100%;
+      max-height: 10rem;
+      overflow: hidden;
+
+      .header-block-max {
+        overflow: hidden;
+        transition: transform ease-in-out 350ms;
+      }
+
+    }
+
+    .project-header {
+      background-color: transparent;
+    }
+  }
+
+  .show-project {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+}

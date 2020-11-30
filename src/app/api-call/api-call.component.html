@@ -1,0 +1,11 @@
+<div class="card-subtitle-container" *ngIf="!isShown">
+    <h3 class="card-subtitle">Click the Train icon for real-time</h3>
+</div>
+
+<div class="results" *ngIf="isShown">
+    <div class="time-display">Chicago's Current Time {{stationInfo.currentHour}} : {{stationInfo.currentMinute}}</div>
+    <div class="time-display">Next Train Arrival {{stationInfo.arrivalHour}} : {{stationInfo.arrivalMinute}}</div>
+</div>
+<div class="button-container">
+    <input type = "button" class="call-button" (click)="getCall()">
+</div>
